@@ -14,17 +14,23 @@ export const Container = styled.div`
     
     div{
         padding-left: 20px;
+
+        p:hover {
+            text-decoration: underline;
+        }
     }
 `;
 export const Title = styled.h3`
     color: white;
     display: block;
+    text-decoration: none;
 `;
 export const Redes = styled.div`
     display: flex;
     flex-direction: column;
     
     div{ 
+        margin-top: 7px;
         display: flex;
 
         svg{ 
@@ -34,6 +40,12 @@ export const Redes = styled.div`
             height: 15px;
             padding: 10px;
             margin-right: 10px;
+
+            &:hover{
+                cursor: pointer;
+                transform: scale(1.1);
+                opacity: 0.93;
+            }
         }
     }
 `;
