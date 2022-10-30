@@ -58,7 +58,7 @@ export const Preco = styled.span`
 export const All= styled.div`
     display: flex;
     justify-content: center;
-    algin-items: center;
+    align-items: center;
     text-decoration: underline;
     color: grey;
     font-size: 18px;

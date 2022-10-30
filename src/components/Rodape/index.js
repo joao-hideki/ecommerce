@@ -1,13 +1,19 @@
-import {Container, Redes, Info, Contatos} from './style';
+import {Container, Redes, Info, Contatos, Title} from './style';
+import {FaTiktok, FaFacebookF, FaTwitter, FaInstagram, FaYoutube,} from 'react-icons/fa';
+
+const socialNetworkIcons = [<FaFacebookF/>, <FaTwitter/>, <FaInstagram/>, <FaTiktok/>, <FaYoutube/>];
 
 export const Rodape = () => {
     return(
         <Container>
             <Redes>
-                <h3>Redes Sociais</h3>
+                <Title>Redes Sociais</Title>
+                <div>
+                    {socialNetworkIcons.map((item) => item)}
+                </div>
             </Redes>
             <Info>
-                <h3>Informações</h3>
+                <Title>Informações</Title>
                 <br/>
                 <p>Seja nosso Revendedor</p>
                 <p>Quem Somos</p>
@@ -20,9 +26,9 @@ export const Rodape = () => {
                 <p>Política de Reembolso</p>
             </Info>
             <Contatos>
-                <h3>Contatos</h3>
+                <Title>Contatos</Title>
                 <p>Segunda a Sextas das 8:00 as 18:00</p>
-                <p>suporte@email.com</p>
+                <p>suporte@email.com.br</p>
                 <p>(12)3456-7890</p>
             </Contatos>
         </Container>
