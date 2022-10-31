@@ -52,7 +52,7 @@ Pré-requisitos: npm / yarn
 
 ```bash
 # clonar repositório
-git clone https://github.com/devsuperior/sds1-wmazoni
+git clone https://github.com/joao-hideki/ecommerce
 
 # entrar na pasta do projeto 
 cd ecommerce
